@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-11-17",
+  "dataset": "Recipes Dataset",
+  "catalogue_url": "https://www.kaggle.com/datasets/thedevastator/better-recipes-for-a-better-life",
+  "catalogue_license": "CC0: Public Domain",
+  "metadata_url": "https://www.kaggle.com/api/v1/datasets/list?search=better-recipes-for-a-better-life",
+  "source_export_url": "https://raw.githubusercontent.com/SamShtram/Cmpsc441_Intelligent_Recipe_Recommendation_System/main/data/recipes.csv",
+  "source_export_sha256": "5fd5c467d35e5e290fb30f4a6bbe87e9bd8bf2a5707c05f9516d1f935a1a1ed0",
+  "source_rows": 1090,
+  "seed_file": "data/seed_recipes.csv",
+  "seed_rows": 59,
+  "seed_sha256": "f2a5fc58396dabe6a8766589901522bb8bbab438a50bf6733f214217cbca3265",
+  "final_unique_titles": 1018,
+  "method": "Preserve the 59 original structured rows, add new case-insensitive titles with ingredients/directions, retain measures, omit optional serving suggestions. Raw snapshot was downloaded for verification and is not required at runtime.",
+  "attribution": "Original recipe source URLs are retained per row and displayed in cards. Catalogue lists CC0; underlying recipe rights and recipe safety have not been independently audited."
+}

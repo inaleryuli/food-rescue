@@ -1,0 +1,3 @@
+PASS: packaging smoke test with synthetic PDF, URLs and sign-offs in ignored .review fixture only. No real team sign-off or final submission is implied.
+Verified ZIP integrity, report.pdf/links.txt, source/config files, and exclusion of environment/secret files.
+ZIP bytes: 1016764

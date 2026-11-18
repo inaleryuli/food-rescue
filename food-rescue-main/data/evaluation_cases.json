@@ -1,0 +1,44 @@
+{
+  "method": "Small, explicit known-item convenience set: three core ingredients per recipe, no time limit; target title must appear in the first 10. Includes broad queries expected to expose coverage-ranking limitations. Not a held-out user study.",
+  "retrieval": [
+    {"title": "Chicken Katsu", "pantry": ["chicken breast", "egg", "panko bread crumbs"]},
+    {"title": "Chicken Marsala", "pantry": ["chicken breast", "mushroom", "Marsala wine"]},
+    {"title": "Chicken Stir-Fry", "pantry": ["chicken breast", "broccoli", "soy sauce"]},
+    {"title": "Baked Garlic Parmesan Chicken", "pantry": ["chicken breast", "Parmesan cheese", "bread crumbs"]},
+    {"title": "Pesto Pasta with Chicken", "pantry": ["chicken breast", "pasta", "pesto sauce"]},
+    {"title": "Honey Glazed Chicken", "pantry": ["chicken breast", "honey", "soy sauce"]},
+    {"title": "Salsa Chicken", "pantry": ["chicken breast", "salsa", "taco seasoning"]},
+    {"title": "Mulligatawny Soup", "pantry": ["chicken broth", "curry powder", "celery"]},
+    {"title": "Sarah's Homemade Applesauce", "pantry": ["apple", "sugar", "cinnamon"]},
+    {"title": "Apple Crisp", "pantry": ["apple", "oat", "cinnamon"]}
+  ],
+  "normalization": [
+    ["1/2 cup fresh diced spinach", "spinach"], ["large brown eggs", "egg"],
+    ["½ cup fresh spinach", "spinach"], ["1½ cups spinach", "spinach"],
+    ["2 (14 ounce) cans diced tomatoes", "tomato"], ["2 tbsp olive oil", "olive oil"],
+    ["3 cloves minced garlic", "garlic"], ["200 g FRESH mushrooms", "mushroom"],
+    ["salt to taste", "salt"], ["1/2", ""], ["brown rice", "brown rice"],
+    ["brown sugar", "brown sugar"], ["chicken broth", "chicken broth"],
+    ["garlic powder", "garlic powder"], ["pound cake", "pound cake"],
+    ["asparagus", "asparagus"], ["couscous", "couscous"],
+    ["sweet potato", "sweet potato"], ["bell pepper", "bell pepper"],
+    ["egg white", "egg white"], ["2 scallions", "green onion"],
+    ["courgettes", "zucchini"], ["aubergines", "eggplant"],
+    ["capsicums", "bell pepper"], ["garbanzo beans", "chickpea"],
+    ["prawns", "shrimp"], ["icing sugar", "powdered sugar"],
+    ["1/2 lb skinless boneless chicken breast", "chicken breast"],
+    ["chikcen", "chicken"], ["西蘭花", "broccoli"]
+  ],
+  "refusals": [
+    {"pantry": ["chicken", "bleach"], "reason": "non_food"},
+    {"pantry": ["rice", "motor-oil"], "reason": "non_food"},
+    {"pantry": ["salt", "water"], "reason": "staples_only"},
+    {"pantry": [], "reason": "staples_only"},
+    {"pantry": ["mouldy chicken"], "reason": "out_of_scope"},
+    {"pantry": ["is this chicken still safe"], "reason": "out_of_scope"},
+    {"pantry": ["allergen-free dinner"], "reason": "out_of_scope"},
+    {"pantry": ["diabetes diet"], "reason": "out_of_scope"},
+    {"pantry": ["egg"], "use_soon": ["bleach"], "reason": "non_food"},
+    {"pantry": ["egg"], "use_soon": ["spinach"], "reason": "invalid_input"}
+  ]
+}

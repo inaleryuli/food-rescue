@@ -1,0 +1,23 @@
+Command: python -X utf8 src/mcp_server.py --test
+Exit code: 0
+Food Rescue MCP self-test (no client required)
+------------------------------------------------
+[PASS] standard pantry returns ok
+[PASS] top three candidates - 3 recipes
+[PASS] candidates rank best first
+[PASS] matched and missing ingredients present
+[PASS] max_time is a hard filter
+[PASS] use-soon ingredient is matched
+[PASS] payload is JSON-serialisable
+[PASS] bleach returns the standard refusal - [SAFETY REFUSAL] Dangerous non-food item detected: 'bleach'. Food Rescue only processes safe, edible ingredients.
+[PASS] refusal returns no recipes
+[PASS] staples-only returns the standard refusal - [INPUT ERROR] Please provide at least one core ingredient.
+[PASS] empty pantry returns the standard refusal
+[PASS] impossible time limit reports no matches - No recipes share a main ingredient with your pantry within 1 minutes. Try different ingredients or more time.
+[PASS] non-integer max_time is rejected
+[PASS] initialize handshake
+[PASS] tools/list exposes search_food_rescue
+[PASS] tools/call returns JSON text and structured content
+[PASS] missing pantry is an invalid-params error
+------------------------------------------------
+17/17 checks passed

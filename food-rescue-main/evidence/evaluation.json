@@ -1,0 +1,885 @@
+{
+  "generated_at_utc": "2026-11-17T10:53:55.116822+00:00",
+  "python": "3.14.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "dataset_sha256": "751f6b420f69a1eca027529b856f9b79962dd79d5e9c242a2d3010857359e770",
+  "code_sha256": "4f8833c4ba419722f1bf6e82e6247f3482dc3f088d5c2f8bb4ad5c7c95b27d28",
+  "code_files": {
+    "data/evaluation_cases.json": "14df1c7163eb6aeb9b1b61a47825106fc8b9065805ac8eeb9fde56eb9bd662f3",
+    "scripts/import_recipe_dataset.py": "1f7c1995340d462fc6ecc34370f4a1e69ae7fec06a38e31a614c1c4391a43dbd",
+    "src/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/agent.py": "d7ded02af8171cdc92e30bce33e27fc360031356c3b5b96c8dfa41c05f8525ca",
+    "src/app.py": "12de153449b7eb921df8363849cdfa39ea5c742a3c2405bf89178d97ced63ce7",
+    "src/engine.py": "126aa31fcf8f8015e7513d57d3a7ffa850e8768c476facabd0c84805cea5f87b",
+    "src/mcp_server.py": "9c81ce13c781b112c57d6b58147619dab0f215d38b5c186f6cc633fe172c3652",
+    "src/normalizer.py": "79f7f71a9a52980de8796930e0403ef13cff3c84c069b4ae9236de3353d20cef",
+    "src/service.py": "06e9bcb96ae2b6761ce518a668832f15b13b3174eb7a87637c82cd363a1e869c",
+    "src/validation.py": "e37a96b6174c2efb8804b90e2e9e3ecf7dcc561d744e3391bdf10a2d48f85aa7",
+    "streamlit_app.py": "7595b7a05dbd579efd1f1fe2cacbdf209c2a939a68ae1fc3b2f957acf1ab3366"
+  },
+  "dataset_count": 1018,
+  "unknown_time_count": 41,
+  "method": "Small, explicit known-item convenience set: three core ingredients per recipe, no time limit; target title must appear in the first 10. Includes broad queries expected to expose coverage-ranking limitations. Not a held-out user study.",
+  "summary": {
+    "normalization_correct": 28,
+    "normalization_total": 30,
+    "top10_hits": 8,
+    "retrieval_total": 10,
+    "refusals_passed": 11,
+    "refusals_total": 11,
+    "time_queries_passed": 30,
+    "time_queries_total": 30,
+    "timed_recipes_checked": 243,
+    "cold_max_seconds": 0.27189670000007027,
+    "warm_median_seconds": 0.02188669999668491
+  },
+  "normalization": [
+    {
+      "input": "1/2 cup fresh diced spinach",
+      "expected": "spinach",
+      "observed": "spinach",
+      "passed": true
+    },
+    {
+      "input": "large brown eggs",
+      "expected": "egg",
+      "observed": "egg",
+      "passed": true
+    },
+    {
+      "input": "½ cup fresh spinach",
+      "expected": "spinach",
+      "observed": "spinach",
+      "passed": true
+    },
+    {
+      "input": "1½ cups spinach",
+      "expected": "spinach",
+      "observed": "spinach",
+      "passed": true
+    },
+    {
+      "input": "2 (14 ounce) cans diced tomatoes",
+      "expected": "tomato",
+      "observed": "tomato",
+      "passed": true
+    },
+    {
+      "input": "2 tbsp olive oil",
+      "expected": "olive oil",
+      "observed": "olive oil",
+      "passed": true
+    },
+    {
+      "input": "3 cloves minced garlic",
+      "expected": "garlic",
+      "observed": "garlic",
+      "passed": true
+    },
+    {
+      "input": "200 g FRESH mushrooms",
+      "expected": "mushroom",
+      "observed": "mushroom",
+      "passed": true
+    },
+    {
+      "input": "salt to taste",
+      "expected": "salt",
+      "observed": "salt",
+      "passed": true
+    },
+    {
+      "input": "1/2",
+      "expected": "",
+      "observed": "",
+      "passed": true
+    },
+    {
+      "input": "brown rice",
+      "expected": "brown rice",
+      "observed": "brown rice",
+      "passed": true
+    },
+    {
+      "input": "brown sugar",
+      "expected": "brown sugar",
+      "observed": "brown sugar",
+      "passed": true
+    },
+    {
+      "input": "chicken broth",
+      "expected": "chicken broth",
+      "observed": "chicken broth",
+      "passed": true
+    },
+    {
+      "input": "garlic powder",
+      "expected": "garlic powder",
+      "observed": "garlic powder",
+      "passed": true
+    },
+    {
+      "input": "pound cake",
+      "expected": "pound cake",
+      "observed": "pound cake",
+      "passed": true
+    },
+    {
+      "input": "asparagus",
+      "expected": "asparagus",
+      "observed": "asparagus",
+      "passed": true
+    },
+    {
+      "input": "couscous",
+      "expected": "couscous",
+      "observed": "couscous",
+      "passed": true
+    },
+    {
+      "input": "sweet potato",
+      "expected": "sweet potato",
+      "observed": "sweet potato",
+      "passed": true
+    },
+    {
+      "input": "bell pepper",
+      "expected": "bell pepper",
+      "observed": "bell pepper",
+      "passed": true
+    },
+    {
+      "input": "egg white",
+      "expected": "egg white",
+      "observed": "egg white",
+      "passed": true
+    },
+    {
+      "input": "2 scallions",
+      "expected": "green onion",
+      "observed": "green onion",
+      "passed": true
+    },
+    {
+      "input": "courgettes",
+      "expected": "zucchini",
+      "observed": "zucchini",
+      "passed": true
+    },
+    {
+      "input": "aubergines",
+      "expected": "eggplant",
+      "observed": "eggplant",
+      "passed": true
+    },
+    {
+      "input": "capsicums",
+      "expected": "bell pepper",
+      "observed": "bell pepper",
+      "passed": true
+    },
+    {
+      "input": "garbanzo beans",
+      "expected": "chickpea",
+      "observed": "chickpea",
+      "passed": true
+    },
+    {
+      "input": "prawns",
+      "expected": "shrimp",
+      "observed": "shrimp",
+      "passed": true
+    },
+    {
+      "input": "icing sugar",
+      "expected": "powdered sugar",
+      "observed": "powdered sugar",
+      "passed": true
+    },
+    {
+      "input": "1/2 lb skinless boneless chicken breast",
+      "expected": "chicken breast",
+      "observed": "chicken breast",
+      "passed": true
+    },
+    {
+      "input": "chikcen",
+      "expected": "chicken",
+      "observed": "chikcen",
+      "passed": false
+    },
+    {
+      "input": "西蘭花",
+      "expected": "broccoli",
+      "observed": "",
+      "passed": false
+    }
+  ],
+  "retrieval": [
+    {
+      "title": "Chicken Katsu",
+      "pantry": [
+        "chicken breast",
+        "egg",
+        "panko bread crumbs"
+      ],
+      "rank": 2,
+      "top10_hit": true
+    },
+    {
+      "title": "Chicken Marsala",
+      "pantry": [
+        "chicken breast",
+        "mushroom",
+        "Marsala wine"
+      ],
+      "rank": 3,
+      "top10_hit": true
+    },
+    {
+      "title": "Chicken Stir-Fry",
+      "pantry": [
+        "chicken breast",
+        "broccoli",
+        "soy sauce"
+      ],
+      "rank": 16,
+      "top10_hit": false
+    },
+    {
+      "title": "Baked Garlic Parmesan Chicken",
+      "pantry": [
+        "chicken breast",
+        "Parmesan cheese",
+        "bread crumbs"
+      ],
+      "rank": 2,
+      "top10_hit": true
+    },
+    {
+      "title": "Pesto Pasta with Chicken",
+      "pantry": [
+        "chicken breast",
+        "pasta",
+        "pesto sauce"
+      ],
+      "rank": 2,
+      "top10_hit": true
+    },
+    {
+      "title": "Honey Glazed Chicken",
+      "pantry": [
+        "chicken breast",
+        "honey",
+        "soy sauce"
+      ],
+      "rank": 1,
+      "top10_hit": true
+    },
+    {
+      "title": "Salsa Chicken",
+      "pantry": [
+        "chicken breast",
+        "salsa",
+        "taco seasoning"
+      ],
+      "rank": 1,
+      "top10_hit": true
+    },
+    {
+      "title": "Mulligatawny Soup",
+      "pantry": [
+        "chicken broth",
+        "curry powder",
+        "celery"
+      ],
+      "rank": 2,
+      "top10_hit": true
+    },
+    {
+      "title": "Sarah's Homemade Applesauce",
+      "pantry": [
+        "apple",
+        "sugar",
+        "cinnamon"
+      ],
+      "rank": 2,
+      "top10_hit": true
+    },
+    {
+      "title": "Apple Crisp",
+      "pantry": [
+        "apple",
+        "oat",
+        "cinnamon"
+      ],
+      "rank": 28,
+      "top10_hit": false
+    }
+  ],
+  "refusals": [
+    {
+      "input": {
+        "pantry": [
+          "chicken",
+          "bleach"
+        ],
+        "reason": "non_food"
+      },
+      "observed_reason": "non_food",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [
+          "rice",
+          "motor-oil"
+        ],
+        "reason": "non_food"
+      },
+      "observed_reason": "non_food",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [
+          "salt",
+          "water"
+        ],
+        "reason": "staples_only"
+      },
+      "observed_reason": "staples_only",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [],
+        "reason": "staples_only"
+      },
+      "observed_reason": "staples_only",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [
+          "mouldy chicken"
+        ],
+        "reason": "out_of_scope"
+      },
+      "observed_reason": "out_of_scope",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [
+          "is this chicken still safe"
+        ],
+        "reason": "out_of_scope"
+      },
+      "observed_reason": "out_of_scope",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [
+          "allergen-free dinner"
+        ],
+        "reason": "out_of_scope"
+      },
+      "observed_reason": "out_of_scope",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [
+          "diabetes diet"
+        ],
+        "reason": "out_of_scope"
+      },
+      "observed_reason": "out_of_scope",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [
+          "egg"
+        ],
+        "use_soon": [
+          "bleach"
+        ],
+        "reason": "non_food"
+      },
+      "observed_reason": "non_food",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [
+          "egg"
+        ],
+        "use_soon": [
+          "spinach"
+        ],
+        "reason": "invalid_input"
+      },
+      "observed_reason": "invalid_input",
+      "passed": true
+    },
+    {
+      "input": {
+        "pantry": [
+          "ingredient 0",
+          "ingredient 1",
+          "ingredient 2",
+          "ingredient 3",
+          "ingredient 4",
+          "ingredient 5",
+          "ingredient 6",
+          "ingredient 7",
+          "ingredient 8",
+          "ingredient 9",
+          "ingredient 10",
+          "ingredient 11",
+          "ingredient 12",
+          "ingredient 13",
+          "ingredient 14",
+          "ingredient 15",
+          "ingredient 16",
+          "ingredient 17",
+          "ingredient 18",
+          "ingredient 19",
+          "ingredient 20",
+          "ingredient 21",
+          "ingredient 22",
+          "ingredient 23",
+          "ingredient 24",
+          "ingredient 25"
+        ],
+        "reason": "overload"
+      },
+      "observed_reason": "overload",
+      "passed": true
+    }
+  ],
+  "constraints": [
+    {
+      "pantry": [
+        "chicken breast",
+        "egg",
+        "panko bread crumbs"
+      ],
+      "max_time": 15,
+      "count": 6,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "egg",
+        "panko bread crumbs"
+      ],
+      "max_time": 30,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "egg",
+        "panko bread crumbs"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "mushroom",
+        "Marsala wine"
+      ],
+      "max_time": 15,
+      "count": 1,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "mushroom",
+        "Marsala wine"
+      ],
+      "max_time": 30,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "mushroom",
+        "Marsala wine"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "broccoli",
+        "soy sauce"
+      ],
+      "max_time": 15,
+      "count": 2,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "broccoli",
+        "soy sauce"
+      ],
+      "max_time": 30,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "broccoli",
+        "soy sauce"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "Parmesan cheese",
+        "bread crumbs"
+      ],
+      "max_time": 15,
+      "count": 3,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "Parmesan cheese",
+        "bread crumbs"
+      ],
+      "max_time": 30,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "Parmesan cheese",
+        "bread crumbs"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "pasta",
+        "pesto sauce"
+      ],
+      "max_time": 15,
+      "count": 1,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "pasta",
+        "pesto sauce"
+      ],
+      "max_time": 30,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "pasta",
+        "pesto sauce"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "honey",
+        "soy sauce"
+      ],
+      "max_time": 15,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "honey",
+        "soy sauce"
+      ],
+      "max_time": 30,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "honey",
+        "soy sauce"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "salsa",
+        "taco seasoning"
+      ],
+      "max_time": 15,
+      "count": 3,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "salsa",
+        "taco seasoning"
+      ],
+      "max_time": 30,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken breast",
+        "salsa",
+        "taco seasoning"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken broth",
+        "curry powder",
+        "celery"
+      ],
+      "max_time": 15,
+      "count": 1,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken broth",
+        "curry powder",
+        "celery"
+      ],
+      "max_time": 30,
+      "count": 6,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "chicken broth",
+        "curry powder",
+        "celery"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "apple",
+        "sugar",
+        "cinnamon"
+      ],
+      "max_time": 15,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "apple",
+        "sugar",
+        "cinnamon"
+      ],
+      "max_time": 30,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "apple",
+        "sugar",
+        "cinnamon"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "apple",
+        "oat",
+        "cinnamon"
+      ],
+      "max_time": 15,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "apple",
+        "oat",
+        "cinnamon"
+      ],
+      "max_time": 30,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "pantry": [
+        "apple",
+        "oat",
+        "cinnamon"
+      ],
+      "max_time": 45,
+      "count": 10,
+      "passed": true
+    }
+  ],
+  "latency": {
+    "cold_seconds": [
+      0.24165500000162865,
+      0.27189670000007027,
+      0.266531400000531
+    ],
+    "warm_seconds": [
+      0.02188669999668491,
+      0.021719299998949282,
+      0.027958799997577444
+    ],
+    "scope": "In-process shared service including validation, CSV loading, scoring and response construction; excludes HTTP/browser/network and live LLM. No live model request performed."
+  },
+  "real_run_example": {
+    "status": "ok",
+    "message": "",
+    "query": {
+      "pantry": [
+        "chicken breast",
+        "mushroom",
+        "butter",
+        "flour"
+      ],
+      "use_soon": [
+        "mushroom"
+      ],
+      "max_time": 30
+    },
+    "count": 3,
+    "recipes": [
+      {
+        "title": "Chicken Marsala",
+        "score": 0.5,
+        "matched_ingredients": [
+          "all-purpose flour for coating",
+          "skinless, boneless chicken breast halves - pounded 1/4 inch thick",
+          "butter",
+          "sliced mushrooms"
+        ],
+        "missing_ingredients": [
+          "salt",
+          "ground black pepper",
+          "dried oregano",
+          "olive oil",
+          "Marsala wine",
+          "cooking sherry"
+        ],
+        "time_minutes": 30,
+        "instructions": "In a shallow dish or bowl, mix together the flour, salt, pepper and oregano. Coat chicken pieces in flour mixture.\nIn a large skillet, melt butter in oil over medium heat. Place chicken in the pan, and lightly brown. Turn over chicken pieces, and add mushrooms. Pour in wine and sherry. Cover skillet; simmer chicken 10 minutes, turning once, until no longer pink and juices run clear.",
+        "source_url": "https://www.allrecipes.com/recipe/8887/chicken-marsala/",
+        "servings": "4",
+        "ingredient_details": [
+          "¼ cup all-purpose flour for coating",
+          "½ teaspoon salt",
+          "¼ teaspoon ground black pepper",
+          "½ teaspoon dried oregano",
+          "4 medium skinless, boneless chicken breast halves - pounded 1/4 inch thick",
+          "4 tablespoons butter",
+          "4 tablespoons olive oil",
+          "1 cup sliced mushrooms",
+          "½ cup Marsala wine",
+          "¼ cup cooking sherry"
+        ]
+      },
+      {
+        "title": "Chicken Katsu",
+        "score": 0.4,
+        "matched_ingredients": [
+          "skinless, boneless chicken breast halves - pounded to 1/2 inch thickness",
+          "all-purpose flour"
+        ],
+        "missing_ingredients": [
+          "salt and pepper to taste",
+          "egg, beaten",
+          "panko bread crumbs",
+          "oil for frying, or as needed"
+        ],
+        "time_minutes": 20,
+        "instructions": "Season the chicken breasts on both sides with salt and pepper. Place the flour, egg and panko crumbs into separate shallow dishes. Coat the chicken breasts in flour, shaking off any excess. Dip them into the egg, and then press into the panko crumbs until well coated on both sides.\nHeat 1/4 inch of oil in a large skillet over medium-high heat. Place chicken in the hot oil, and cook 3 or 4 minutes per side, or until golden brown.\nTry serving this with Japanese salad dressing for dipping.",
+        "source_url": "https://www.allrecipes.com/recipe/72068/chicken-katsu/",
+        "servings": "4",
+        "ingredient_details": [
+          "4  skinless, boneless chicken breast halves - pounded to 1/2 inch thickness",
+          "salt and pepper to taste",
+          "2 tablespoons all-purpose flour",
+          "1  egg, beaten",
+          "1 cup panko bread crumbs",
+          "1 cup oil for frying, or as needed"
+        ]
+      },
+      {
+        "title": "Lemon Garlic Chicken",
+        "score": 0.4,
+        "matched_ingredients": [
+          "butter",
+          "skinless, boneless chicken breast halves"
+        ],
+        "missing_ingredients": [
+          "salt",
+          "ground black pepper",
+          "garlic powder, divided",
+          "lemon, juiced"
+        ],
+        "time_minutes": 25,
+        "instructions": "Melt butter in a skillet over medium-high heat.\nSeason chicken with salt and pepper; place in melted butter. Cook chicken, flipping frequently, until browned, about 5 minutes. Sprinkle 1 tablespoon garlic powder over chicken; cook for 2 minutes. Flip and sprinkle remaining 1 tablespoon garlic powder on the second side; cook for 2 minutes.\nPour lemon juice over each side of chicken and cook until no longer pink in the center, 5 to 10 minutes more. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C).",
+        "source_url": "https://www.allrecipes.com/recipe/240993/lemon-garlic-chicken/",
+        "servings": "3",
+        "ingredient_details": [
+          "2 tablespoons butter",
+          "3  skinless, boneless chicken breast halves",
+          "1 ½ teaspoons salt",
+          "1 ½ teaspoons ground black pepper",
+          "2 tablespoons garlic powder, divided",
+          "1  lemon, juiced"
+        ]
+      }
+    ]
+  },
+  "passed": true
+}

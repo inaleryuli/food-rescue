@@ -1,0 +1,15 @@
+Command: python -X utf8 benchmark.py --repeats 3
+Exit code: 0
+In-process scenario response benchmark (strict SLA: < 1.500 s per call)
+Iterations per scenario: 3
+PASS test_case_01_standard_three_item_pantry: calls=3, seconds=[0.311268600, 0.071918500, 0.058452700], SLA violations=0
+PASS test_case_02_standard_three_item_pantry: calls=3, seconds=[0.128948200, 0.061122300, 0.062828200], SLA violations=0
+PASS test_case_03_standard_three_item_pantry: calls=3, seconds=[0.146606600, 0.068882300, 0.061784800], SLA violations=0
+PASS test_case_04_standard_four_item_pantry: calls=3, seconds=[0.126702900, 0.057022100, 0.061126000], SLA violations=0
+PASS test_case_05_use_soon_spinach_improves_rank: calls=6, seconds=[0.000782800, 0.000135400, 0.000455400, 0.000118100, 0.000736400, 0.000176500], SLA violations=0
+PASS test_case_06_top_three_prioritize_use_soon_spinach: calls=3, seconds=[0.000446700, 0.000440700, 0.000432800], SLA violations=0
+PASS test_case_07_fifteen_minute_limit_excludes_slow_recipes: calls=6, seconds=[0.020614100, 0.044003600, 0.010291300, 0.030825900, 0.011840300, 0.028314600], SLA violations=0
+PASS test_case_08_staple_only_pantry_is_refused: calls=3, seconds=[0.000094100, 0.000065300, 0.000147700], SLA violations=0
+PASS test_case_09_bleach_is_refused: calls=3, seconds=[0.000013600, 0.000010900, 0.000010100], SLA violations=0
+PASS test_case_10_more_than_twenty_five_ingredients_is_refused: calls=3, seconds=[0.000069200, 0.000069600, 0.000036100], SLA violations=0
+Overall: PASS

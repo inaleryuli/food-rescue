@@ -1,0 +1,57 @@
+Command: python -X utf8 -m unittest discover -s tests -v
+Exit code: 0
+test_invalid_repeats_rejected (test_benchmark.BenchmarkTests.test_invalid_repeats_rejected) ... ok
+test_missing_or_duplicate_scenario_rejected (test_benchmark.BenchmarkTests.test_missing_or_duplicate_scenario_rejected) ... ok
+test_strict_boundary_and_repeated_calls (test_benchmark.BenchmarkTests.test_strict_boundary_and_repeated_calls) ... ok
+test_success_below_boundary (test_benchmark.BenchmarkTests.test_success_below_boundary) ... ok
+test_timing_records_success_and_exceptions (test_benchmark.BenchmarkTests.test_timing_records_success_and_exceptions) ... ok
+test_unmeasured_and_failed_scenarios_fail (test_benchmark.BenchmarkTests.test_unmeasured_and_failed_scenarios_fail) ... ok
+test_add_normalize_use_soon_remove_clear_and_staples_refusal (test_browser.BrowserTests.test_add_normalize_use_soon_remove_clear_and_staples_refusal) ... 2026-11-17 18:53:45.648 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_bad_inputs_are_visible_and_never_added (test_browser.BrowserTests.test_bad_inputs_are_visible_and_never_added) ... 2026-11-17 18:53:46.227 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_presets_render_cards_shopping_lists_and_explanation (test_browser.BrowserTests.test_presets_render_cards_shopping_lists_and_explanation) ... 2026-11-17 18:53:46.384 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-17 18:53:46.688 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-17 18:53:46.939 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_hard_time_limit_includes_boundary_excludes_unknown (test_engine.RankingTests.test_hard_time_limit_includes_boundary_excludes_unknown) ... ok
+test_limit_and_small_dataset (test_engine.RankingTests.test_limit_and_small_dataset) ... ok
+test_repository_dataset (test_engine.RankingTests.test_repository_dataset) ... ok
+test_staples_only_and_empty_pantries_rejected (test_engine.RankingTests.test_staples_only_and_empty_pantries_rejected) ... ok
+test_top_three_sort_by_score_then_matches_then_title (test_engine.RankingTests.test_top_three_sort_by_score_then_matches_then_title) ... ok
+test_use_soon_changes_winner_and_preserves_missing_items (test_engine.RankingTests.test_use_soon_changes_winner_and_preserves_missing_items) ... ok
+test_aliases_and_derived_products (test_integration.ContractTests.test_aliases_and_derived_products) ... ok
+test_all_entry_points_refuse_overload_before_normalization (test_integration.ContractTests.test_all_entry_points_refuse_overload_before_normalization) ... ok
+test_cache_invalidates_after_dataset_change (test_integration.ContractTests.test_cache_invalidates_after_dataset_change) ... ok
+test_dataset_unavailable_is_a_clear_error (test_integration.ContractTests.test_dataset_unavailable_is_a_clear_error) ... ok
+test_hazard_priority_and_both_lists (test_integration.ContractTests.test_hazard_priority_and_both_lists) ... ok
+test_importer_is_idempotent (test_integration.ContractTests.test_importer_is_idempotent) ... ok
+test_importer_preserves_food_prefixes_fractions_and_quantities (test_integration.ContractTests.test_importer_preserves_food_prefixes_fractions_and_quantities) ... ok
+test_input_contract_and_real_no_matches (test_integration.ContractTests.test_input_contract_and_real_no_matches) ... ok
+test_legacy_imports_are_the_same_implementation (test_integration.ContractTests.test_legacy_imports_are_the_same_implementation) ... ok
+test_mcp_real_stdio_and_parse_error_recovery_from_other_cwd (test_integration.ContractTests.test_mcp_real_stdio_and_parse_error_recovery_from_other_cwd) ... ok
+test_optional_ai_success_rejects_invented_output_and_falls_back (test_integration.ContractTests.test_optional_ai_success_rejects_invented_output_and_falls_back) ... ok
+test_scope_refusals (test_integration.ContractTests.test_scope_refusals) ... ok
+test_source_quantities_short_steps_and_cache_isolation (test_integration.ContractTests.test_source_quantities_short_steps_and_cache_isolation) ... ok
+test_engine_raw_input_equals_canonical_input (test_normalizer.NormalizerTests.test_engine_raw_input_equals_canonical_input) ... ok
+test_pantry_deduplicates_and_accepts_single_string (test_normalizer.NormalizerTests.test_pantry_deduplicates_and_accepts_single_string) ... ok
+test_plain_food_does_not_satisfy_derived_product (test_normalizer.NormalizerTests.test_plain_food_does_not_satisfy_derived_product) ... ok
+test_preserve_meaningful_food_words (test_normalizer.NormalizerTests.test_preserve_meaningful_food_words) ... ok
+test_proposal_examples_and_quantities (test_normalizer.NormalizerTests.test_proposal_examples_and_quantities) ... ok
+test_reject_empty_and_staples_with_quantities (test_normalizer.NormalizerTests.test_reject_empty_and_staples_with_quantities) ... ok
+test_reject_non_string_instead_of_silent_conversion (test_normalizer.NormalizerTests.test_reject_non_string_instead_of_silent_conversion) ... ok
+test_case_01_standard_three_item_pantry (test_scenarios.ProposalScenarioTests.test_case_01_standard_three_item_pantry) ... ok
+test_case_02_standard_three_item_pantry (test_scenarios.ProposalScenarioTests.test_case_02_standard_three_item_pantry) ... ok
+test_case_03_standard_three_item_pantry (test_scenarios.ProposalScenarioTests.test_case_03_standard_three_item_pantry) ... ok
+test_case_04_standard_four_item_pantry (test_scenarios.ProposalScenarioTests.test_case_04_standard_four_item_pantry) ... ok
+test_case_05_use_soon_spinach_improves_rank (test_scenarios.ProposalScenarioTests.test_case_05_use_soon_spinach_improves_rank) ... ok
+test_case_06_top_three_prioritize_use_soon_spinach (test_scenarios.ProposalScenarioTests.test_case_06_top_three_prioritize_use_soon_spinach) ... ok
+test_case_07_fifteen_minute_limit_excludes_slow_recipes (test_scenarios.ProposalScenarioTests.test_case_07_fifteen_minute_limit_excludes_slow_recipes) ... ok
+test_case_08_staple_only_pantry_is_refused (test_scenarios.ProposalScenarioTests.test_case_08_staple_only_pantry_is_refused) ... ok
+test_case_09_bleach_is_refused (test_scenarios.ProposalScenarioTests.test_case_09_bleach_is_refused) ... ok
+test_case_10_more_than_twenty_five_ingredients_is_refused (test_scenarios.ProposalScenarioTests.test_case_10_more_than_twenty_five_ingredients_is_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 3.614s
+
+OK

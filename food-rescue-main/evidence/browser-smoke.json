@@ -1,0 +1,13 @@
+{
+  "generated_at_utc": "2026-11-17T10:15:26.081891+00:00",
+  "browser": "Microsoft Edge headless",
+  "checks": [
+    "real preset-to-recipe workflow",
+    "source link",
+    "shopping-list download content",
+    "visible hazard refusal",
+    "390px mobile results"
+  ],
+  "passed": true,
+  "scope": "Local live Streamlit app; no live model request"
+}
